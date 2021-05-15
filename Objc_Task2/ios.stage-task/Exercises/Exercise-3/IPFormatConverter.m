@@ -12,10 +12,10 @@
     if (a == 4) {
         
         while (i < [numbersArray count]) {
-            if ([[numbersArray objectAtIndex:i] intValue] <= 0){
+            if ([[numbersArray objectAtIndex:i] intValue] < 0){
                 string = @"a";
                 break;
-            } else if([[numbersArray objectAtIndex:i] intValue] >= 255) {
+            } else if([[numbersArray objectAtIndex:i] intValue] > 255) {
                 string = @"b";
                 break;
             } else {
